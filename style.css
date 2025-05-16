@@ -1,0 +1,96 @@
+/* ========== GLOBAL ========== */
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav span {
+  cursor: pointer;
+}
+
+/* ========== CUSTOM BUTTON ========== */
+.btn-custom {
+  background-color: #EBF314;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #d4db12;
+}
+
+/* ========== INTRO SECTION ========== */
+.intro-section {
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+}
+
+.intro-section h1 {
+  font-size: 3.5rem; /* larger name */
+}
+
+.intro-section p {
+  font-size: 3.75rem;
+  margin-top: 1.5rem;
+  line-height: 3;
+}
+
+/* Profile Image */
+img[alt="Gabriel Zohrob"] {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% -60px;
+  border-radius: 50%;
+}
+
+/* ========== PROJECT CARDS ========== */
+.project-card {
+  width: 300px;
+  margin: 0 12px;
+}
+
+
+.project-card img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .d-flex.flex-wrap {
+    justify-content: center !important;
+  }
+
+  .project-card {
+    margin-bottom: 25px;
+  }
+}
+
+/* ========== HEADER NAVIGATION ========== */
+header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+header img {
+  height: 150px;
+}
+
+.nav-link-custom {
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  display: inline-block;
+}
+
