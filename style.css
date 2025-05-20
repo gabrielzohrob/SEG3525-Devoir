@@ -1,19 +1,23 @@
 /* ========== GLOBAL ========== */
+/* Set background to black, text to white, and apply a clean sans-serif font */
 body {
   background-color: #000;
   font-family: Arial, sans-serif;
   color: white;
 }
 
+/* Remove default underlines from all links */
 a {
   text-decoration: none;
 }
 
+/* Make nav text clickable (pointer cursor) */
 header nav span {
   cursor: pointer;
 }
 
 /* ========== CUSTOM BUTTON ========== */
+/* Style for yellow buttons under each project */
 .btn-custom {
   background-color: #EBF314;
   color: black;
@@ -26,48 +30,54 @@ header nav span {
   transition: background-color 0.3s ease;
 }
 
+/* Slightly darker yellow on hover */
 .btn-custom:hover {
   background-color: #d4db12;
 }
 
 /* ========== INTRO SECTION ========== */
+/* Add top and bottom space around the intro */
 .intro-section {
   padding-top: 8vh;
   padding-bottom: 10vh;
 }
 
+/* Large title size for the name */
 .intro-section h1 {
-  font-size: 3.5rem; /* larger name */
+  font-size: 3.5rem;
 }
 
+/* Enlarged paragraph font for bio */
 .intro-section p {
   font-size: 3.75rem;
   margin-top: 1.5rem;
   line-height: 3;
 }
 
-/* Profile Image */
+/* ====== PROFILE IMAGE ====== */
+/* Make the profile image a perfect circle and crop using object-fit */
 img[alt="Gabriel Zohrob"] {
   width: 400px;
   height: 400px;
   object-fit: cover;
-  object-position: 50% -60px;
+  object-position: 50% -60px; /* Focuses higher up on the face */
   border-radius: 50%;
 }
 
 /* ========== PROJECT CARDS ========== */
+/* Size and spacing for each project box */
 .project-card {
   width: 300px;
   margin: 0 12px;
 }
 
-
+/* Limit image height and ensure proper scaling */
 .project-card img {
   max-height: 500px;
   object-fit: contain;
 }
 
-/* Responsive spacing */
+/* Responsive layout for smaller screens */
 @media (max-width: 768px) {
   .d-flex.flex-wrap {
     justify-content: center !important;
@@ -79,6 +89,8 @@ img[alt="Gabriel Zohrob"] {
   }
 }
 
+/* ========== HOVER EFFECT ON PROJECTS ========== */
+/* Smooth scaling animation when hovering over a project */
 .hover-scale {
   transition: transform 0.3s ease;
   display: inline-block;
@@ -89,31 +101,18 @@ img[alt="Gabriel Zohrob"] {
 }
 
 /* ========== HEADER NAVIGATION ========== */
+/* Top spacing around the header */
 header {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+/* Size of the logo image in the header */
 header img {
   height: 150px;
 }
 
-.nav-link-custom {
-  font-size: 1.5rem;
-  padding: 5px 15px;
-  display: inline-block;
-}
-
-.social-icon {
-  height: 70px;
-  filter: brightness(0) invert(1); /* makes dark logos appear white */
-  transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
-}
-
+/* Style for "Home" and "Projects" navigation text */
 .nav-link-custom {
   font-size: 1.5rem;
   padding: 5px 15px;
@@ -121,7 +120,20 @@ header img {
   transition: transform 0.3s ease;
 }
 
+/* Scale up slightly on hover to make links feel interactive */
 .nav-link-custom:hover {
   transform: scale(1.15);
 }
 
+/* ========== SOCIAL ICONS ========== */
+/* Sizing and white filter effect for GitHub and LinkedIn icons */
+.social-icon {
+  height: 70px;
+  filter: brightness(0) invert(1); /* Converts dark icons to white */
+  transition: transform 0.3s ease;
+}
+
+/* Grow the icons a bit when hovered for a dynamic effect */
+.social-icon:hover {
+  transform: scale(1.2);
+}
