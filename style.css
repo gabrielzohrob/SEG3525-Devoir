@@ -137,3 +137,44 @@ header img {
 .social-icon:hover {
   transform: scale(1.2);
 }
+
+/* ========== ANIMATIONS ========== */
+
+/* Fade-in effect on page load */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced hover effect for project cards */
+.project-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Button glow on hover */
+.btn-custom:hover {
+  background-color: #d4db12;
+  box-shadow: 0 0 15px #EBF314;
+}
+
+/* Keep your existing hover-scale class for nav, if needed */
+.hover-scale {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.hover-scale:hover {
+  transform: scale(1.08);
+}
